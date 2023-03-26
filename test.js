@@ -18,7 +18,7 @@ function fetchMeme() {
                   <h4 class="card-title ml-2">Posted By <span class="text-success">${meme["author"]}</span></h4>
                   <p class="card-text ml-2"><b>Caption:- </b><span class="text-primary">${meme["title"]}</span></p>
                 </div>
-                <img class="card-img-bottom p-1 shadow" style="border-radius:10px;" src="${meme["url"]}" alt="Card image cap" width=300px height=350px onerror="this.onerror=null; this.src='error.jpg';">
+                <img class="card-img-bottom p-1 shadow" style="border-radius:10px;" src="${meme["url"]}" alt="Card image cap" width=320px height=350px onerror="this.onerror=null; this.src='error.jpg';">
               </div>
            `;
         document.getElementById('meme').appendChild(div);
