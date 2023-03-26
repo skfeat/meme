@@ -27,7 +27,7 @@ function fetchMeme() {
       } else {
         fetchedUrls.push(url); // Add URL to fetchedUrls array
         const div = document.createElement("div");
-        div.innerHTML+=`<div style="border:1px solid grey; border-radius: 10px; margin:10px; padding:10px;"><center>`+`<b>Post Title : ${meme["title"]}<br></b>`+`<img src='${url}' width=400px height=400px><br>`+`<b>Posted by ${meme["author"]}</b>`+`</center></div>`
+        div.innerHTML+=`<div style="border:1px solid grey; border-radius: 10px; margin:10px; padding:5px;"><center>`+`<b>Post Title : ${meme["title"]}<br></b>`+`<img src='${url}' width=300px height=300px><br>`+`<b>Posted by ${meme["author"]}</b>`+`</center></div>`
         document.getElementById('test').appendChild(div)
       }
     })
