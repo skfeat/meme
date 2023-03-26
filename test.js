@@ -4,7 +4,7 @@
 const fetchedUrls = [];
 
 function fetchMeme() {
-  fetch("https://meme-api.com/gimme")
+  fetch("https://meme-api.com/gimme/animememes")
     .then(response => response.json())
     .then(meme => {
       const url = meme["url"];
@@ -34,7 +34,7 @@ function mixedmeme() {
 
   function fetchMeme() {
     document.getElementById('meme').innerHTML=""
-    fetch("https://meme-api.com/gimme")
+    fetch("https://meme-api.com/gimme/animememes")
       .then(response => response.json())
       .then(meme => {
         const url = meme["url"];
