@@ -1,7 +1,7 @@
 const fetchedUrls = [];
 
 function fetchMeme() {
-  fetch("https://meme-api.com/gimme/animememes/1")
+  fetch("https://meme-api.com/gimme/Hentaimemes/1")
     .then(response => response.json())
     .then(data => {
       const meme = data.memes[0];
